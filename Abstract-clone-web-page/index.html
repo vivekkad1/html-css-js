@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abstract Help Center</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2a9b6dd84b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="container header-nav">
+        <div class="logo-link">
+          <a href="#">Abstract</a>
+          <span>|</span>
+          <a href="#">Help Center</a>
+        </div>
+        <div class="header-actions">
+          <button class="btn-submit">Submit a request</button>
+          <button class="btn-signin">Sign in</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>How can we help?</h1>
+        <input type="search" placeholder="Search" class="search-input" />
+      </section>
+
+      <section class="info-section container">
+        <div class="info-grid">
+          <div class="info-item">
+            <img src="./images/1.png" alt="Using Abstract Icon" />
+            <div>
+              <h3>Using Abstract</h3>
+              <p>
+                Abstract lets you manage, version, and document your designs in
+                one place.
+              </p>
+              <a href="#"
+                >Learn More <i class="fa-solid fa-arrow-right ml-1"></i
+              ></a>
+            </div>
+          </div>
+          <div class="info-item">
+            <img src="./images/2.png" alt="Manage Account Icon" />
+            <div>
+              <h3>Manage your account</h3>
+              <p>
+                Configure your account settings, such as your email, profile
+                details, and password.
+              </p>
+              <a href="#"
+                >Learn More <i class="fa-solid fa-arrow-right ml-1"></i
+              ></a>
+            </div>
+          </div>
+          <div class="info-item">
+            <img src="./images/3.png" alt="Manage Organizations Icon" />
+            <div>
+              <h3>Manage organizations, teams, and projects</h3>
+              <p>
+                Use Abstract organizations, teams, and projects to organize your
+                people and your work.
+              </p>
+              <a href="#"
+                >Learn More <i class="fa-solid fa-arrow-right ml-1"></i
+              ></a>
+            </div>
+          </div>
+          <div class="info-item">
+            <img src="./images/4.png" alt="Manage Billing Icon" />
+            <div>
+              <h3>Manage billing</h3>
+              <p>Change subscriptions and payment details.</p>
+              <a href="#"
+                >Learn More <i class="fa-solid fa-arrow-right ml-1"></i
+              ></a>
+            </div>
+          </div>
+          <div class="info-item">
+            <img src="./images/5.png" alt="Authentication Icon" />
+            <div>
+              <h3>Authenticate to Abstract</h3>
+              <p>
+                Set up and configure SSO, SCIM, and Just-in-Time provisioning.
+              </p>
+              <a href="#"
+                >Learn More <i class="fa-solid fa-arrow-right ml-1"></i
+              ></a>
+            </div>
+          </div>
+          <div class="info-item">
+            <img src="./images/6.png" alt="Support Icon" />
+            <div>
+              <h3>Abstract support</h3>
+              <p>Get in touch with a human.</p>
+              <a href="#"
+                >Learn More <i class="fa-solid fa-arrow-right ml-1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <button class="help-button">
+        <i class="fa-solid fa-question"></i>
+        Help
+      </button>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-col footer-col-main">
+          <h3>Abstract</h3>
+          <ul>
+            <li><a href="#">Start Trial</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Download</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Release Notes</a></li>
+            <li><a href="#">Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Community</h3>
+          <ul>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Dribbble</a></li>
+            <li><a href="#">Podcast</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col-company">
+          <div class="footer-company">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Legal</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact Us</h4>
+            <a href="mailto:info@abstract.com">info@abstract.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-col">
+        <p>&copy; Copyright <span id="year"></span></p>
+        <p>Abstract Studio Design, Inc.</p>
+        <p>All rights reserved</p>
+      </div>
+    </footer>
+
+    <script>
+      const year = document.getElementById("year");
+      year.innerText = new Date().getFullYear();
+    </script>
+  </body>
+</html>
